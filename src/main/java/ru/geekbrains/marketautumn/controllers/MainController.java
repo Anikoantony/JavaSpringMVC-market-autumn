@@ -20,7 +20,7 @@ public class MainController {
     private final ProductServices productServices;
 
 
-// http://localhost:8190/app/allproducts/?id=2
+// http://localhost:8190/app/allproducts/?id=2 - передача параметров
     @GetMapping("/allproducts/")
     public String getAllProducts(Model model, @RequestParam Long id)
     {
