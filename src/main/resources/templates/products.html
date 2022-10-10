@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>GeekMarket</title>
+</head>
+<body>
+<div th:each="a : ${productsList}">
+  <span th:text="${'Name: '+a.title}"/>
+ </div>
+<h3 th:text="${'ID: ' + product.getId()}"/>
+<h3 th:text="${'Name: ' + product.getTitle()}"/>
+</body>
+</html>
