@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавить клиента</title>
+</head>
+<body>
+<h1>Добавить клиента</h1>
+<!- @ ссылка на корень приложения -->
+<form method="get" th:action="@{'/add'}">
+  <span>ID-шник</span>
+  <input name="id" type="number">
+    <span>Имя</span>
+    <input name="name" type="text">
+  <button type="submit">submit</button>
+
+</form>
+</body>
+</html>

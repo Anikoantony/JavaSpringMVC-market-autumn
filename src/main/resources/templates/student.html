@@ -6,8 +6,8 @@
 </head>
 <body>
 <div th:each="s : ${studentsList}">
-    <span th:text="${'Name: '+s.name}"/>
-    <a th:href="@{'/page/?IDD='+${s.id}}"/>
+    <a th:href="@{'/page/?IDD='+${s.id}}"><span th:text="${'Name: '+s.name}"/></a>
+
 </div>
 </body>
 </html>
