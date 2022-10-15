@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 @Repository
 public class ProductRepository {
     private List<Product> products;
@@ -19,12 +20,13 @@ public class ProductRepository {
         products = new ArrayList<>(Arrays.asList(
                 new Product(1L,"Car",600L),
                 new Product(2L,"House",1002L),
-                new Product(2L,"Boat",300L)
+                new Product(3L,"Boat",300L)
         ));
     }
 
     public List<Product> allProducts()
     {
+
         return products;
     }
 
